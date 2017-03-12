@@ -3,25 +3,33 @@
 <html lang="en">
 
 <head>
-	<!--meta tags-->
+    <!--meta tags-->
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    {% block custom_meta %} {% endblock custom_meta %}
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"> {% block custom_meta %} {% endblock custom_meta %}
     <!--library imports-->
-    <link href="{% static 'bootstrap-4.0.0-alpha.5-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'bootstrap-social-gh-pages/bootstrap-social.css' %}">
     <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
     <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300|Lato:300" rel="stylesheet">
+    <!--icons-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--custom imports-->
     <link rel="stylesheet" href="{% static 'style_home_page.css' %}">
     <link rel="stylesheet" href="{% static 'style_mobile.css' %}"> {% block extra_headers %} {% endblock extra_headers %}
 </head>
 
-<body>
-    {% block body_content %} {% endblock body_content %}
+<body class="home">
+
+
+    <main>
+        {% block body_content %} {% endblock body_content %}
+    </main>
+
+
     <script src="{% static 'tether.min.js' %}"></script>
-    <script src="{% static 'jquery-3.1.1.min.js' %}"></script>
-    <script src="{% static 'bootstrap-4.0.0-alpha.5-dist/js/bootstrap.min.js' %}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
