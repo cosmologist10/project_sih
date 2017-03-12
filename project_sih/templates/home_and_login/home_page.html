@@ -1,13 +1,36 @@
 {% extends "sitewide/sitewide_base.html" %}
-{% load staticfiles %}
-
-{% block custom_meta %}
-    <meta property="og:description" content="Project Sharing App">
-{% endblock custom_meta %}
-{% block extra_headers %}
-	<title>Project</title>
-{% endblock extra_headers %}
-
+{% load staticfiles %} {% block custom_meta %}
+<meta property="og:description" content="Project Sharing App"> {% endblock custom_meta %} {% block extra_headers %}
+<title>Project</title>
+{% endblock extra_headers %} 
 {% block body_content %}
-	<p>Welcome to the Project Sharing App</p>
+<form id="signup_form" method="POST">
+    {% csrf_token %} {{form_signup}}
+    <button type="submit">Sign Up</button>
+</form>
+<form action="/home/verify_login/" method="POST">
+    {% csrf_token %} {{form_login}}
+    <button type="submit">Sign Up</button>
+</form>
+{% if user.is_authenticated %}
+<p>Welcome to the Project Sharing App</p>
+{% endif %}
+<script type="text/javascript">
+	 var frm = $('#signup_form');
+    frm.submit(function () {
+        $.ajax({
+            type: frm.attr('method'),
+            url: '/home/add_new_user/',
+            data: frm.serialize(),
+            success: function (data) {
+                console.log(data);
+                location.reload();
+            },
+            error: function(data) {
+                // $("#MESSAGE-DIV").html("Something went wrong!");
+            }
+        });
+        return false;
+    });
+</script>
 {% endblock body_content %}

@@ -14,14 +14,14 @@
     <!--fonts-->
     <!--custom imports-->
     <link rel="stylesheet" href="{% static 'style_home_page.css' %}">
-    <link rel="stylesheet" href="{% static 'style_mobile.css' %}"> {% block extra_headers %} {% endblock extra_headers %}
+    <link rel="stylesheet" href="{% static 'style_mobile.css' %}">
+    <script src="{% static 'tether.min.js' %}"></script>
+    <script src="{% static 'jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap-4.0.0-alpha.5-dist/js/bootstrap.min.js' %}"></script> {% block extra_headers %} {% endblock extra_headers %}
 </head>
 
 <body>
     {% block body_content %} {% endblock body_content %}
-    <script src="{% static 'tether.min.js' %}"></script>
-    <script src="{% static 'jquery-3.1.1.min.js' %}"></script>
-    <script src="{% static 'bootstrap-4.0.0-alpha.5-dist/js/bootstrap.min.js' %}"></script>
 </body>
 
 </html>
