@@ -1,2 +1,5 @@
 venv
 .env
+project_sih/__pycache__/
+home_and_login/__pycache__/
+
