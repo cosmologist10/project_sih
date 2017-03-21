@@ -1,0 +1,4 @@
+Django==1.10.6
+python-decouple==3.0
+psycopg2==2.7
+
