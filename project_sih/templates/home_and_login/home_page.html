@@ -2,30 +2,42 @@
 <meta property="og:description" content="Project Sharing App"> {% endblock custom_meta %} {% block extra_headers %}
 <title>Project</title>
 {% endblock extra_headers %} {% block body_content %}
-<section class="navigation-bar">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <!--    <li><input type="text" name="" value="" placeholder="Search"></li>  -->
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#signupModal">SIGNUP</a></li>
-                </ul>
-            </div>
-            </form>
-        </div>
-    </nav>
+
+
+<!-- =========================
+   HOME SECTION
+============================== -->
+<header id="home" class="header">
+
+<!--===================== Navigation Bar==========================
+================================================================-->
+	<nav id="main-nav" class="navbar navbar-inverse navbar-fixed bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header responsive-logo">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="./" class="navbar-brand" >LOGO</a>
+				<a href="./" class="navbar-brand" >WEBSITE NAME</a>
+			</div>
+			<div class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+			<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#aboutus">ABOUT US</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#start">GETTING STARTED</a></li>
+        <li><a href="#reachus">REACH US</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#signupModal">SIGNUP</a></li>
+			</ul>
+		</div>
+  </form>
+</div>
+</nav>
 </section>
 <section class="login-modal">
     <div id="loginModal" class="modal fade" role="dialog">
@@ -140,7 +152,10 @@
         </div>
     </div>
 </section>
-<section class="heading">
+
+
+<section class="HOME" id="home">
+ <section class="heading">
     <div class="text-center">
         <div class="row">
             <div class="container col-sm-12 content-centered">
@@ -155,22 +170,26 @@
         </div>
     </div>
 </section>
+
+<section class="ABOUT US" id="aboutus">
 <section class="news">
     <div class="text-center">
         <div class="row">
             <div class="container col-sm-12 content-centered">
-                <h2 class="section-title">Latest News</h2>
-                <p>Work Has Began on Projects ! Learn about the vision and how to get involved</p>
+                <h2 class="section-title">ABOUT US</h2>
+                <p>Knowledge platform for sharing the project works taken up by the students in Technical/Higher Educational Institutes and Universities throughout the country.</p>
             </div>
         </div>
     </div>
 </section>
+
+<section class="PROJECTS" id="projects">
 <section class="use">
     <div class="text-center">
         <div class="row">
             <div class="container">
                 <div class="use-title container-fluid">
-                    <h2>Use Projects</h2>
+                    <h2>Projects</h2>
                 </div>
                 <div class="icon-block col-md-4 col-sm-12" data-href="#">
                     <a href="#">
@@ -205,10 +224,12 @@
         </div>
     </div>
 </section>
+
+<section class="Events" id="events">
 <section class="site-carousel">
     <div class="row">
         <div class="container">
-            <h2 class="text-center">What our customers say</h2>
+            <h2 class="text-center">UPCOMING EVENTS</h2>
             <div id="Carousel" class="carousel slide text-center" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -246,15 +267,28 @@
     </div>
 
 </section>
+
+<section class="REACH US" id="reachus">
+<section class="newsletter">
+<div class="container">
+	<h3 class="white-text" data-scrollreveal="enter left after 0s over 1s">Stay in touch</h3> <!-- NEWSLETTER SECTION HEADING -->
+	<div class="sub-heading white-text" data-scrollreveal="enter right after 0s over 1s">
+		 Sign Up for Email Updates on on News &amp; Offers
+	</div>
+
+	<!-- SUBSCRIPTION FORM -->
+	<form action="#" class="subscription" role="form" data-scrollreveal="enter left after 0s over 1s">
+		<input type="email" placeholder="Enter email" class="form-control input-box">
+		<button class="btn btn-primary custom-button red-btn">Sign Up</button>
+	</form>
+	<!-- / END SUBSCRIPTION FORM -->
+
+</div> <!-- / END CONTAINER -->
+</section> <!-- / END NEWSLETTER SECTION -->
+
 <section class="join">
     <div class="text-center">
-        <div class="row">
-            <div class="container col-sm-12 col-md-12 content-centered">
-                <a href="#">
-                    <button type="button" class="btn btn-default join-button">Become a Contributor</button>
-                </a>
-            </div>
-            <div class="social-login">
+          <div class="social-login">
                 <a class="btn btn-social-icon " href="#">
                     <span class="fa fa-github"></span>
                 </a>
@@ -271,13 +305,4 @@
         </div>
     </div>
     </div>
-</section>
-<section class="footer">
-    <footer class="container-fluid text-center">
-        <a class="toTop" href="#" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Projects Made By Phoenix</p>
-    </footer>
-</section>
 {% endblock body_content %}
