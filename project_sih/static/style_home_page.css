@@ -4,6 +4,7 @@ html {
 }
 
 .navbar {
+   background-color: #281a4b;
     margin-bottom: 0;
     border: 0;
     position: relative;
@@ -12,9 +13,21 @@ html {
     height: 86px;
     border-radius: 0;
 }
-
-#myNavbar {
-    background-color: #fff;
+.navbar-inverse .navbar-brand, .navbar-brand:focus {
+    color: orange;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: white;
+}
+menu {
+  color: white;
+}
+#mainpg {
+  background-color: #281a4b;
+}
+body {
+  color: black;
 }
 
 .navbar-default {
@@ -44,27 +57,29 @@ html {
   text-align: center;
 }  */
 
-.navbar-default .navbar-nav>li>a {
-    color: #f02541;
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
     font-size: 0.90rem;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
-.navbar-default .navbar-nav>li>a:visited {
-    color: #f02541;
+.navbar-inverse .navbar-nav>li>a:visited {
+    color: orange;
     text-decoration: none;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #fc5b3a;
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
 }
 
 .navbar-nav.navbar-right:last-child {
     margin-right: 25px;
 }
+.navbar-brand {
 
+}
 
 /* Main content */
 
@@ -141,8 +156,9 @@ html {
 }
 
 .heading {
-    background: linear-gradient(141deg, #fc5b3a 0, #f02541 100%);
-    color: #fff;
+
+    background-color: #281a4b;
+    color: white;
     padding: 3rem 0 1.5rem;
 }
 
@@ -191,9 +207,9 @@ html {
 
 /*Section News*/
 
-.news {
-    background-color: #353535;
-    color: #fff;
+.aboutus {
+    background-color: white;
+    color: black;
     padding: 2rem;
     position: relative;
 }
@@ -201,12 +217,16 @@ html {
 .section-title {
     margin: 0 0 1rem;
     font-size: 1.5rem;
-    color: #fc5b3a;
+    color: red;
     text-transform: uppercase;
 }
 
 
 /*Section Use*/
+.project {
+  background-color: #281a4b;
+  color: white;
+}
 
 .icon-block {
     padding: 4rem 2rem;
@@ -215,7 +235,7 @@ html {
 }
 
 .icon-block>a>.icon {
-    color: #f02541;
+    color: orange;
     font-size: 5.5rem;
     margin-top: 5px;
 }
@@ -224,12 +244,12 @@ html {
     transition: .4s ease-in;
     position: relative;
     margin-top: -20px;
-    color: #fff;
+    color: white;
 }
 
 .icon-block:hover {
     cursor: pointer;
-    color: #fff;
+    color: white;
     background: linear-gradient(141deg, #fc5b3a 0, #f02541 100%);
 }
 
@@ -243,47 +263,47 @@ html {
 }
 
 .use-heading-link {
-    color: #fc5b3a;
+    color: orange;
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
 }
 
-.use-title {
-    color: #fc5b3a;
+.project-title{
+    color: white;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin-top: 0px;
     font-family: 'Lato', sans-serif;
-    background-color: #f5f5f5;
+    background-color: ##281a4b;
     margin: 0px -100%;
 }
 
 
 /*Carousel*/
 
-.site-carousel {
-    background-color: #f5f5f5;
+.events {
+    background-color: white;
 }
 
-#Carousel {
+#events {
     height: 250px;
 }
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #f02541;
+    color: black;
     height: 195px;
 }
 
 .carousel-indicators li {
-    border-color: #f02541;
+    border-color: black;
 }
 
 .carousel-indicators li.active {
-    background-color: #f02541;
+    background-color: black;
 }
 
 .item h4 {
@@ -296,6 +316,10 @@ html {
 
 .item span {
     font-style: normal;
+}
+
+.reachus {
+  
 }
 
 
